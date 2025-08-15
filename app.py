@@ -7,7 +7,7 @@ import dns.resolver
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from database import init_db, add_user, log_scan, get_last_scans, get_user_info
 
-BOT_TOKEN = "8365566667:AAFOxgKpk8Efx_6HIT3Q-5go8DrzaKSaCew"
+BOT_TOKEN = ""
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # هنا بتم تحميل الادوات في حالة تشغيل الكود لاول مرة على سيرفر جديد 
@@ -254,3 +254,4 @@ if __name__ == "__main__":
     init_db()
     print("Bot is running...")
     bot.infinity_polling()
+
